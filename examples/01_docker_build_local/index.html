@@ -2,30 +2,24 @@
 <html>
     <head>
     <title>Docker build local</title>
-    <base href="https://ocurrent-test.github.io/" />
+    <base href="http://occurent.org" />
     <meta charset="UTF-8" />
     <meta
         name="viewport"
         content="width=device-width,initial-scale=1"
     />
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="/syntax.css"
-    />
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://ocurrent-test.github.io//main.css"
-    />
+    <meta property="og:title" content="Docker build local" />
+<meta property="og:description" content="Simple sequential pipeline" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://occurent.org/examples/01_docker_build_local/" /><meta property="article:section" content="examples" />
+
+
+
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
         rel="stylesheet"
-    />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
-        rel="stylesheet"
+        type="text/css"
+        href="http://occurent.org/main.css"
     />
 </head>
 
@@ -88,7 +82,13 @@
         <div id="container">
             <main>
 
-<h1>Docker build local</h1>
+<div id="topline">
+    <h1>Docker build local</h1>
+    
+    <p class="summary">Simple sequential pipeline</p>
+    
+</div>
+
 
 <p>This monitors a local Git repository (<code>repo</code>), from which it gets the current
 head commit. It copies it to a temporary clone and builds it with <code>docker build /path/to/clone</code>, then executes the example with <code>--help</code> to check that it runs.</p>
@@ -130,7 +130,9 @@ in-progress, grey means cannot be started yet (inputs not ready),
 yellow means queued or waiting for permission to start, and red means failed.</p>
 <p>Clicking on a box shows the log for that operation (though not all operations
 have logs; <code>head commit</code> doesn&rsquo;t, for example).</p>
- </main>
+
+
+</main>
 
             <footer>
     <a href="https://tarides.com/">

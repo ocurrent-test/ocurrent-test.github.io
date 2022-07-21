@@ -2,30 +2,24 @@
 <html>
     <head>
     <title>Disk cache</title>
-    <base href="https://ocurrent-test.github.io/" />
+    <base href="http://occurent.org" />
     <meta charset="UTF-8" />
     <meta
         name="viewport"
         content="width=device-width,initial-scale=1"
     />
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="/syntax.css"
-    />
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://ocurrent-test.github.io//main.css"
-    />
+    <meta property="og:title" content="Disk cache" />
+<meta property="og:description" content="Disk cache" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://occurent.org/docs/ocurrent/doc/" /><meta property="article:section" content="docs" />
+
+
+
 
     <link
-        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
         rel="stylesheet"
-    />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
-        rel="stylesheet"
+        type="text/css"
+        href="http://occurent.org/main.css"
     />
 </head>
 
@@ -90,6 +84,7 @@
 
 <h1>Disk cache</h1>
 
+
 <h3 id="the-build-cache">The build cache</h3>
 <p>When run, OCurrent keeps its state in <code>./var</code> (creating it if it doesn&rsquo;t already exist).
 The layout is subject to change, but for debugging purposes:</p>
@@ -105,7 +100,9 @@ sqlite&gt; SELECT key, job_id, ok, value FROM cache WHERE op=&#39;docker-build&#
 <code>ok</code> indicates whether the build passed, and <code>value</code> is the resulting Docker image
 (or the error message, if <code>ok</code> is false).</p>
 <p>For the full schema, see <a href="https://github.com/ocurrent/ocurrent/blob/master/lib_cache/db.ml">lib_cache/db.ml</a>.</p>
- </main>
+
+
+</main>
 
             <footer>
     <a href="https://tarides.com/">
