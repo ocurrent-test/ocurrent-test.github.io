@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>OCurrent Blog on OCurrent</title>
+    <title>OCurrent Blog on OCurrent-test</title>
     <link>https://ocurrent-test.github.io/blog/</link>
-    <description>Recent content in OCurrent Blog on OCurrent</description>
+    <description>Recent content in OCurrent Blog on OCurrent-test</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 14 Nov 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://ocurrent-test.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
